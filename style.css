@@ -1,0 +1,10 @@
+canvas {
+	border: 1px solid pink;
+}
+h1 {
+	margin:3px;
+}
+html,body,canvas {
+    overscroll-behavior-y: contain;
+    touch-action: none;
+}

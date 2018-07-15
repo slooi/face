@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<title>Happy and Sad Face Classifer</title>
+	</head>
+	<body>
+		<h1>Happy and Sad Face Classifer</h1>
+		<canvas></canvas>
+		<br>
+		<button onclick="clearPictureData()">Clear Picture</button>
+		<button onclick="sendPictureData()">Predict Picture</button>
+		<span>Prediction:</span>
+		<span id="predictionText"></span>
+		<br>
+		<input type="text" id="dataField"></input>
+		<button onclick="sendData()">Send Training Data</button>
+
+		<input type="text" id="weightField"></input>
+		<button onclick="sendWeights()">Send Weights</button>
+
+		<input type="text" id="biasesField"></input>
+		<button onclick="sendBiases()">Send Biases</button>
+
+		<br>
+		<br>
+		<button onclick="getWeights()">Copy Weights to Clipboard</button>
+		<button onclick="getBiases()">Copy Biases to Clipboard</button>
+
+		<p>synapses</p>
+		<p id="a"></p>
+		<p>biases</p>
+		<p id="b"></p>
+		<p>nodes</p>
+		<p id="c"></p>
+		<p>errors</p>
+		<p id="e"></p>
+		<p>derivatives</p>
+		<p id="d"></p>
+		<p>toBeData:</p>
+		<p id="toBeData"></p>
+		<script src="matrix.js"></script>
+		<script src="canvas.js"></script>
+
+	</body>
+</html>
